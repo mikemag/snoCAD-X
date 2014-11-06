@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADpdfExporter.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADmanualDXFexporter.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADeditor.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADfileFilters.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADPDFexporterPanel.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADrailGeometry.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snxFileManager.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADboardDisplay.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADutilities.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADgraphicElement.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADaboutDialog.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADboard.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADstatsPanel.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADgraphicsPanel.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADeditorMenu.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADpdfExportFilter.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/Main.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADgraphicsLibrary.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADrailPointPanel.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADapplicationFrame.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADrailShaper.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADdxfExportFilter.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADcoreShaper.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADpreferences.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADgeometryManipulator.java</file>
+            <file>file:/Users/Mike/dev/snoCAD-X/snoCAD-x/src/snocadx/snoCADrailPoint.java</file>
+        </group>
+    </open-files>
+</project-private>
