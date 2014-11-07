@@ -95,6 +95,8 @@ public class snoCADboard {
         m_tipspacerType = snoCADutilities.SIDEWALL;
         m_tipspacerRadiusNose = 150;
         m_tipspacerRadiusTail = 150;
+        m_tipspacerPointyNose = 30;
+        m_tipspacerPointyTail = 30;
         m_tipspacerInterlockRadius = 10;
         m_tipSidewallOffset = 0;
         
@@ -177,6 +179,8 @@ public class snoCADboard {
         
         m_tipspacerRadiusNose = 65;
         m_tipspacerRadiusTail = 65;
+        m_tipspacerPointyNose = 30;
+        m_tipspacerPointyTail = 30;
         
         m_tipspacerInterlockRadius = 10;
         
@@ -274,6 +278,9 @@ public class snoCADboard {
         m_tipspacerType = snoCADutilities.getTaggedInt(m_tipspacerType, data, "tipspacerType");
         m_tipspacerRadiusNose = snoCADutilities.getTaggedInt(m_tipspacerRadiusNose, data, "tipspacerRadiusNose");
         m_tipspacerRadiusTail = snoCADutilities.getTaggedInt(m_tipspacerRadiusTail, data, "tipspacerRadiusTail");
+        m_tipspacerPointyNose = snoCADutilities.getTaggedInt( m_tipspacerPointyNose, data, "tipspacerPointyNose" );
+        m_tipspacerPointyTail = snoCADutilities.getTaggedInt( m_tipspacerPointyTail, data, "tipspacerPointyTail" );
+        
         m_tipspacerInterlockRadius = snoCADutilities.getTaggedInt(m_tipspacerInterlockRadius, data, "tipspacerInterlockRadius");
         m_tipSidewallOffset = snoCADutilities.getTaggedInt(m_tipSidewallOffset, data, "tipSidewallOffset");
     
@@ -565,6 +572,8 @@ public class snoCADboard {
             data = snoCADutilities.addTaggedData(data, "tipspacerType", m_tipspacerType );
             data = snoCADutilities.addTaggedData(data, "tipspacerRadiusNose", m_tipspacerRadiusNose);
             data = snoCADutilities.addTaggedData(data, "tipspacerRadiusTail", m_tipspacerRadiusTail);
+            data = snoCADutilities.addTaggedData(data, "tipspacerPointyNose", m_tipspacerPointyNose);
+            data = snoCADutilities.addTaggedData(data, "tipspacerPointyTail", m_tipspacerPointyTail);
             data = snoCADutilities.addTaggedData(data, "tipspacerInterlockRadius", m_tipspacerInterlockRadius);
             data = snoCADutilities.addTaggedData(data, "tipSidewallOffset", m_tipSidewallOffset);
     
@@ -675,6 +684,8 @@ public class snoCADboard {
     
     public int getNoseTipspacerRadius() { return m_tipspacerRadiusNose;}
     public int getTailTipspacerRadius() { return m_tipspacerRadiusTail;}
+    public int getNoseTipspacerPointy() { return m_tipspacerPointyNose; }
+    public int getTailTipspacerPointy() { return m_tipspacerPointyTail; }
     public int getTipSidewallOffset() { return m_tipSidewallOffset;}
     public int getTipspacerInterlockRadius() { return m_tipspacerInterlockRadius;}
     
@@ -762,6 +773,9 @@ public class snoCADboard {
     
     public void setNoseTipspacerRadius(int radius) { m_tipspacerRadiusNose = radius;}
     public void setTailTipspacerRadius(int radius) { m_tipspacerRadiusTail = radius;}
+    public void setNoseTipspacerPointy(int radius) { m_tipspacerPointyNose = radius;}
+    public void setTailTipspacerPointy(int radius) { m_tipspacerPointyTail = radius;}
+    
     public void setTipspacerInterlockRadius(int radius) { m_tipspacerInterlockRadius = radius;}
     public void setTipSidewallOffset(int offset) { m_tipSidewallOffset = offset;}
     
@@ -875,6 +889,8 @@ public class snoCADboard {
     private int m_tipspacerType;
     private int m_tipspacerRadiusNose;
     private int m_tipspacerRadiusTail;
+    private int m_tipspacerPointyNose;
+    private int m_tipspacerPointyTail;
     private int m_tipspacerInterlockRadius;
     private int m_tipSidewallOffset;
     

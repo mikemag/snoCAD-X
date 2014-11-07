@@ -26,12 +26,12 @@
           <Group type="102" alignment="0" attributes="0">
               <EmptySpace max="-2" attributes="0"/>
               <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace max="-2" attributes="0"/>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
-              <EmptySpace pref="401" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
               <Component id="m_close" min="-2" pref="75" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
           </Group>
@@ -184,26 +184,35 @@
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="m_tipspacerType" alignment="0" pref="99" max="32767" attributes="1"/>
+                      <Component id="m_tipspacerRadiusTail" alignment="0" max="32767" attributes="1"/>
+                      <Component id="m_tipspacerPointy" alignment="0" max="32767" attributes="1"/>
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                                  <Component id="jLabel1" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="m_tipspacerType" alignment="0" max="32767" attributes="1"/>
+                              </Group>
+                              <Component id="m_tsLengthTailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="m_tsLengthTail" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="m_tsWidthTailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="m_tsWidthTail" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="m_interlockRadiusLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                  <Component id="m_interlockRadius" alignment="0" max="32767" attributes="1"/>
+                                  <Component id="m_tipspacerRadiusLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="m_tsLengthNoseLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="m_tsLengthNose" alignment="0" max="32767" attributes="1"/>
+                                  <Component id="m_tsWidthNoseLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                                  <Component id="m_tsWidthNose" alignment="0" max="32767" attributes="1"/>
+                                  <Component id="m_tipspacerRadius" alignment="0" max="32767" attributes="1"/>
+                              </Group>
+                              <Component id="m_tipspacerPointyLabel" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="m_tipspacerRadiusLabelTail" alignment="0" min="-2" max="-2" attributes="0"/>
+                              <Component id="m_tipspacerPointyLabelTail" alignment="0" min="-2" max="-2" attributes="0"/>
+                          </Group>
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="m_tipspacerRadiusLabelTail" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="m_tipspacerRadiusTail" alignment="0" pref="199" max="32767" attributes="1"/>
-                      <Component id="m_tsLengthTailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="m_tsLengthTail" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="m_tsWidthTailLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="m_tsWidthTail" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Component id="m_interlockRadiusLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                          <Component id="m_interlockRadius" alignment="0" max="32767" attributes="1"/>
-                          <Component id="m_tipspacerRadiusLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="m_tsLengthNoseLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="m_tsLengthNose" alignment="0" max="32767" attributes="1"/>
-                          <Component id="m_tsWidthNoseLabel" alignment="0" min="-2" max="-2" attributes="0"/>
-                          <Component id="m_tsWidthNose" alignment="0" max="32767" attributes="1"/>
-                          <Component id="m_tipspacerRadius" alignment="0" max="32767" attributes="1"/>
-                      </Group>
+                      <Component id="m_tipspacerPointyTail" alignment="0" max="32767" attributes="1"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
@@ -219,10 +228,14 @@
                   <Component id="m_interlockRadiusLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="m_interlockRadius" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="22" max="-2" attributes="0"/>
+                  <EmptySpace pref="22" max="32767" attributes="0"/>
                   <Component id="m_tipspacerRadiusLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="m_tipspacerRadius" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="m_tipspacerPointyLabel" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="m_tipspacerPointy" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="m_tsLengthNoseLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -231,10 +244,14 @@
                   <Component id="m_tsWidthNoseLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="m_tsWidthNose" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="m_tipspacerRadiusLabelTail" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="m_tipspacerRadiusTail" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="m_tipspacerPointyLabelTail" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="m_tipspacerPointyTail" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="m_tsLengthTailLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
@@ -243,7 +260,7 @@
                   <Component id="m_tsWidthTailLabel" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="m_tsWidthTail" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -252,12 +269,13 @@
         <Component class="javax.swing.JComboBox" name="m_tipspacerType">
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-              <StringArray count="5">
+              <StringArray count="6">
                 <StringItem index="0" value="Sidewall"/>
                 <StringItem index="1" value="Radius"/>
                 <StringItem index="2" value="Interlock"/>
                 <StringItem index="3" value="Straight"/>
-                <StringItem index="4" value="None"/>
+                <StringItem index="4" value="Pointy"/>
+                <StringItem index="5" value="None"/>
               </StringArray>
             </Property>
           </Properties>
@@ -365,6 +383,34 @@
             <Property name="minorTickSpacing" type="int" value="1"/>
             <Property name="paintTicks" type="boolean" value="true"/>
             <Property name="value" type="int" value="0"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSlider" name="m_tipspacerPointy">
+          <Properties>
+            <Property name="majorTickSpacing" type="int" value="100"/>
+            <Property name="maximum" type="int" value="300"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
+            <Property name="value" type="int" value="30"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="m_tipspacerPointyLabel">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tipspacer Pointy Nose"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="m_tipspacerPointyLabelTail">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="Tipspacer Pointy Tail"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JSlider" name="m_tipspacerPointyTail">
+          <Properties>
+            <Property name="majorTickSpacing" type="int" value="100"/>
+            <Property name="maximum" type="int" value="300"/>
+            <Property name="minorTickSpacing" type="int" value="10"/>
+            <Property name="paintTicks" type="boolean" value="true"/>
+            <Property name="value" type="int" value="30"/>
           </Properties>
         </Component>
       </SubComponents>
