@@ -77,6 +77,9 @@ public class snoCADcoreShaper extends javax.swing.JDialog{
         m_tipspacerRadiusTail.setValue(tipspacerRadiusTail);
         m_tipspacerRadiusLabelTail.setText("Tipspacer Radius Tail : " + Integer.toString(tipspacerRadiusTail) + "mm");
         
+        m_tipspacerPointy.setValue(m_bp.getBoard().getNoseTipspacerPointy() );
+        m_tipspacerPointyTail.setValue(m_bp.getBoard().getTailTipspacerPointy());
+        
         m_tipspacerPointy.setMaximum(m_bp.getBoard().getNoseLength());
         m_tipspacerPointyTail.setMaximum(m_bp.getBoard().getTailLength());
         
@@ -670,6 +673,21 @@ public class snoCADcoreShaper extends javax.swing.JDialog{
             
         }
         
+        if (tipspacerIdx == 3) 
+        {
+            m_bp.getBoard().setTipspacerType(snoCADutilities.STRAIGHT);
+            m_bp.getBoard().setCoreTailLength(0);
+            m_bp.getBoard().setCoreNoseLength(0);
+            m_interlockRadius.setEnabled(false);
+            m_tipspacerRadius.setEnabled(false);
+            m_tipspacerRadiusTail.setEnabled(false);
+            m_interlockRadiusLabel.setEnabled(false);
+            m_tipspacerRadiusLabel.setEnabled(false);
+            m_tipspacerRadiusLabelTail.setEnabled(false);
+            m_tipSidewallOffset.setEnabled(false);
+            m_tipSidewallOffsetLabel.setEnabled(false);
+        }
+                
         if (tipspacerIdx == 4) 
         {
             m_bp.getBoard().setTipspacerType(snoCADutilities.POINTY);
@@ -690,23 +708,6 @@ public class snoCADcoreShaper extends javax.swing.JDialog{
             m_tipspacerPointyLabelTail.setEnabled(true);
             m_tipSidewallOffset.setEnabled(false);
             m_tipSidewallOffsetLabel.setEnabled(false);        }
-        
-        if (tipspacerIdx == 3) 
-        {
-            m_bp.getBoard().setTipspacerType(snoCADutilities.STRAIGHT);
-            m_bp.getBoard().setCoreTailLength(0);
-            m_bp.getBoard().setCoreNoseLength(0);
-            m_interlockRadius.setEnabled(false);
-            m_tipspacerRadius.setEnabled(false);
-            m_tipspacerRadiusTail.setEnabled(false);
-            m_interlockRadiusLabel.setEnabled(false);
-            m_tipspacerRadiusLabel.setEnabled(false);
-            m_tipspacerRadiusLabelTail.setEnabled(false);
-            m_tipSidewallOffset.setEnabled(false);
-            m_tipSidewallOffsetLabel.setEnabled(false);
-        }
-        
-        
         
         if (tipspacerIdx == 5) 
         {
