@@ -271,6 +271,7 @@ public class snoCADstatsPanel extends javax.swing.JPanel {
 
         jLabel13.setText("Tail Height");
 
+        m_nhField.setEditable(false);
         m_nhField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 m_nhFieldOnEditRL(evt);
@@ -282,6 +283,7 @@ public class snoCADstatsPanel extends javax.swing.JPanel {
             }
         });
 
+        m_thField.setEditable(false);
         m_thField.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 m_thFieldOnEditRL(evt);
