@@ -91,7 +91,6 @@ public class snoCADgeometryManipulator {
        
        if (m_visible) 
        {
-           System.out.println("Size is " + m_size);
            g2d.draw(m_symbol);
            g2d.setFont(m_font);
            g2d.setColor(m_inactiveColour);
