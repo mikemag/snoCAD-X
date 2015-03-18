@@ -21,11 +21,11 @@
  *
  * To change this template, choose Tools | Template Manager
  * and open the template in the editor.
+ *
+ * 18.03.2015 : DGRAF : Increased handle size and added inactive handle size
  */
 
 package snocadx;
-
-import java.awt.geom.Rectangle2D;
 
 /**
  *
@@ -33,13 +33,16 @@ import java.awt.geom.Rectangle2D;
  */
 public class snoCADgeometryManipulator {
     
-    /** Creates a new instance of geometryManipulator */
+    /** Creates a new instance of geometryManipulator
+     * @param handleTitle */
     
     // Constructor when location is unknown
     public snoCADgeometryManipulator(String handleTitle)
     {
-        m_size = 5;
-        m_sensorSize = 100;
+        
+        m_size = 10; // DGRA 18.03.2015 - increased size of handles
+        m_inactiveSize = 5; // DGRA 18.03.2015 - increased size of handles when inactive
+        m_sensorSize = 50;
         m_symbol = new java.awt.geom.Rectangle2D.Double();
         m_x = 0;
         m_y = 0;
@@ -58,8 +61,9 @@ public class snoCADgeometryManipulator {
     // COnstruct in a known location
     public snoCADgeometryManipulator(double x, double y, String handleTitle) 
     {
-        m_size = 5;
-        m_sensorSize = 100;
+        m_size = 10; // DGRA 18.03.2015 - increased size of handles
+        m_inactiveSize = 5; // DGRA 18.03.2015 - increased size of handles when inactive
+        m_sensorSize = 50;
         m_symbol = new java.awt.geom.Rectangle2D.Double();
         m_x = x;
         m_y = y;
@@ -87,6 +91,7 @@ public class snoCADgeometryManipulator {
        
        if (m_visible) 
        {
+           System.out.println("Size is " + m_size);
            g2d.draw(m_symbol);
            g2d.setFont(m_font);
            g2d.setColor(m_inactiveColour);
@@ -100,7 +105,8 @@ public class snoCADgeometryManipulator {
        else
        {
            g2d.setColor(m_inactiveColour);
-           g2d.drawRect((int)m_x - 1, (int)m_y - 1, 2, 2);
+           // DGRA 18.03.2015 - increased size of handles when inactive
+           g2d.drawRect((int)m_x - m_inactiveSize / 2, (int)m_y - m_inactiveSize / 2, m_inactiveSize, m_inactiveSize);
        }
     }
     
@@ -109,7 +115,7 @@ public class snoCADgeometryManipulator {
 
         m_colour = new java.awt.Color(255,255,0);
         m_inactiveColour = new java.awt.Color(90,90,30);
-        m_symbol.setFrame(m_x - m_size / 2, m_y - m_size / 2, m_size, m_size);  
+        m_symbol.setFrame((int)m_x - m_size / 2, (int)m_y - m_size / 2, m_size, m_size);  
     }
     
     public double getX() { return m_x; }
@@ -162,6 +168,7 @@ public class snoCADgeometryManipulator {
     private boolean m_inUse;
     private boolean m_hidden;
     private int m_size;
+    private int m_inactiveSize; // 18.3.2015 DGRAF - added an inactive size
     private int m_sensorSize;
     private String m_handleTitle;
     private String m_message;
