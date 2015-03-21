@@ -38,7 +38,7 @@ import javax.imageio.*;
  */
 public class Main {
 
-final static String version = "1.0.7.a";
+final static String version = "1.0.7.b";
 static String globalPreferences = "";
 
     /** Creates a new instance of Main */

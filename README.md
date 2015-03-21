@@ -1,4 +1,4 @@
-# snoCAD-X v1.0.7.a
+# snoCAD-X v1.0.7.b
 
 snoCAD-X is an open source CAD program for designing skis and
 snowboards. It was written by Dan Graf of Graf Snowboards in 2007 and
@@ -26,11 +26,13 @@ details.
 
 ## Current Release
 
-A binary release will be added soon. (2014/11/05)
-
 See the [Releases page](https://github.com/mikemag/snoCAD-X/releases)
 for the current release, which includes release notes and links to
 download binaries.
+
+Simply download the zip and double-click snoCAD-x.jar to launch the
+app on any platform with Java installed. See the release notes for
+more details.
 
 ## Dependencies
 
