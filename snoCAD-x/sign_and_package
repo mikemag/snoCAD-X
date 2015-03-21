@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Sign everything with a self-signed cert. I didn't realize how much certificate authorities
+# bend you over for certificates... yikes!
+jarsigner -storepass $1 -tsa http://timestamp.digicert.com dist/snoCAD-x.jar mikemag
+jarsigner -storepass $1 -tsa http://timestamp.digicert.com dist/lib/iText-2.1.4.jar mikemag
+jarsigner -storepass $1 -tsa http://timestamp.digicert.com dist/lib/jlfgr-1_0.jar mikemag
+jarsigner -storepass $1 -tsa http://timestamp.digicert.com dist/lib/swing-layout-1.0.4.jar mikemag
+
+# Sign everything with my Apple developer cert so they'll run without question on Mac, too.
+# This is also a cert which is verified thru Apple's certificate chain.
+codesign -s "Developer ID Application" dist/snoCAD-x.jar
+codesign -s "Developer ID Application" dist/lib/iText-2.1.4.jar
+codesign -s "Developer ID Application" dist/lib/jlfgr-1_0.jar
+codesign -s "Developer ID Application" dist/lib/swing-layout-1.0.4.jar
+
+verline=`grep "String version" src/snocadx/Main.java`
+verstr=`expr "$verline" : '.*\"\(.*\)\".*'`
+mv dist/ snoCAD-X-$verstr
+zip -r snoCAD-X-$verstr.zip snoCAD-X-$verstr
