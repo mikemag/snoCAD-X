@@ -923,6 +923,23 @@ public class snoCADboardDisplay extends javax.swing.JPanel {
                 m_coreTailCalculatedLength = tailArcWidth;
                 
                 break;
+
+            case snoCADutilities.POINTY :
+                
+                double nosePointLength = scale( m_board.getNoseTipspacerPointy() );
+                double tailPointLength = scale( m_board.getTailTipspacerPointy() );
+                
+                tailInterfacePath.moveTo(tailToeWidePoint.x, tailToeWidePoint.y);
+                tailInterfacePath.lineTo(tailHeelWidePoint.x + tailPointLength, tailHeelWidePoint.y - ( ( tailHeelWidePoint.y - tailToeWidePoint.y ) / 2 ) );
+                tailInterfacePath.lineTo(tailHeelWidePoint.x, tailHeelWidePoint.y);
+                
+                noseInterfacePath.moveTo(noseHeelWidePoint.x, noseHeelWidePoint.y);
+                noseInterfacePath.lineTo(noseToeWidePoint.x - nosePointLength, noseToeWidePoint.y + ( ( noseHeelWidePoint.y - noseToeWidePoint.y ) / 2 ) );
+                noseInterfacePath.lineTo(noseToeWidePoint.x, noseToeWidePoint.y);
+                
+                m_coreNoseCalculatedLength = nosePointLength;
+                m_coreTailCalculatedLength = tailPointLength;
+                break;
                 
             case snoCADutilities.NONE :
                 

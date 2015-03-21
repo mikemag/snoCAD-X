@@ -392,6 +392,7 @@ public class snoCADutilities {
     static public final int RADIUS = 1;
     static public final int INTERLOCK = 2;
     static public final int STRAIGHT = 3;
+    static public final int POINTY = 4;
     static public final int NONE = 99;
     
     // Rail Type Constants
