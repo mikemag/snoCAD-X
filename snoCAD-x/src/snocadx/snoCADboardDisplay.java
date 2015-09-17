@@ -735,7 +735,8 @@ public class snoCADboardDisplay extends javax.swing.JPanel {
         m_Bg2d.setColor(m_board.getBoardOutlineColour());
         
         // Helper variables for quadratic calculation
-        double sidecutBase = Math.sqrt((m_board.getSidecutRadius() * m_board.getSidecutRadius()) - ((m_board.getRunningLength() / 2) * (m_board.getRunningLength() / 2)));
+        double radiusLengthRatio = m_board.getRunningLength() / (double)m_board.getSidecutRadius();
+        double sidecutBase = m_board.getSidecutRadius() * Math.sqrt(1.0 - 0.25 * radiusLengthRatio * radiusLengthRatio);
         double sidecutWidth = m_board.getSidecutRadius() - sidecutBase;
         
         // Key co-ordinates on the outline
@@ -1237,7 +1238,8 @@ public class snoCADboardDisplay extends javax.swing.JPanel {
         m_Bg2d.setColor(m_board.getBoardOutlineColour());
         
         // Helper variables for quadratic calculation
-        double sidecutBase = Math.sqrt((m_board.getSidecutRadius() * m_board.getSidecutRadius()) - ((m_board.getRunningLength() / 2) * (m_board.getRunningLength() / 2)));
+        double radiusLengthRatio = m_board.getRunningLength() / (double)m_board.getSidecutRadius();
+        double sidecutBase = m_board.getSidecutRadius() * Math.sqrt(1.0 - 0.25 * radiusLengthRatio * radiusLengthRatio);
         double sidecutWidth = m_board.getSidecutRadius() - sidecutBase;
         
         // Key co-ordinates on the outline
@@ -1689,7 +1691,8 @@ public class snoCADboardDisplay extends javax.swing.JPanel {
     {
         
         // Helper variables for quadratic calculation
-        double sidecutBase = Math.sqrt((m_board.getSidecutRadius() * m_board.getSidecutRadius()) - ((m_board.getRunningLength() / 2) * (m_board.getRunningLength() / 2)));
+        double radiusLengthRatio = m_board.getRunningLength() / (double)m_board.getSidecutRadius();
+        double sidecutBase = m_board.getSidecutRadius() * Math.sqrt(1.0 - 0.25 * radiusLengthRatio * radiusLengthRatio);
         double sidecutWidth = m_board.getSidecutRadius() - sidecutBase;
         
         // Key co-ordinates on the outline
@@ -1915,7 +1918,8 @@ public class snoCADboardDisplay extends javax.swing.JPanel {
         snoCADutilities.point tailTip = new snoCADutilities.point((tailToeWidePoint.x + scale(m_board.getTailLength())), getMidPointY());
         
         // Helper variables for quadratic calculation
-        double sidecutBase = Math.sqrt((m_board.getSidecutRadius() * m_board.getSidecutRadius()) - ((m_board.getRunningLength() / 2) * (m_board.getRunningLength() / 2)));
+        double radiusLengthRatio = m_board.getRunningLength() / (double)m_board.getSidecutRadius();
+        double sidecutBase = m_board.getSidecutRadius() * Math.sqrt(1.0 - 0.25 * radiusLengthRatio * radiusLengthRatio);
         double sidecutWidth = m_board.getSidecutRadius() - sidecutBase;
         
         // Points through which the rail midsnoCADutilities.point runs
@@ -2306,7 +2310,8 @@ public class snoCADboardDisplay extends javax.swing.JPanel {
     {
         snoCADutilities.point sideCutMidControlPoint = new snoCADutilities.point(0, 0);
         
-        double sidecutBase = Math.sqrt((m_board.getSidecutRadius() * m_board.getSidecutRadius()) - ((m_board.getRunningLength() / 2) * (m_board.getRunningLength() / 2)));
+        double radiusLengthRatio = m_board.getRunningLength() / (double)m_board.getSidecutRadius();
+        double sidecutBase = m_board.getSidecutRadius() * Math.sqrt(1.0 - 0.25 * radiusLengthRatio * radiusLengthRatio);
         double sidecutWidth = m_board.getSidecutRadius() - sidecutBase;
         
         snoCADutilities.point noseToeWidePoint = new snoCADutilities.point(getMidPointX() - scale(m_board.getRunningLength()) / 2, getMidPointY() - scale(m_board.getNoseWidth()) / 2);
@@ -3149,7 +3154,6 @@ public class snoCADboardDisplay extends javax.swing.JPanel {
                     if (m_board.getConvexRails()) sideCutRadius = m_board.getSidecutRadius() + 50 * (getHandleMovedDistance(e.getY(), m_mousePositionY  )) ;
                     
                     if (sideCutRadius < 1000) sideCutRadius = 1000;
-                    if (sideCutRadius > 46000) sideCutRadius = 46000;
                     
                     m_board.setSidecutRadius(sideCutRadius);
                     
@@ -3174,7 +3178,6 @@ public class snoCADboardDisplay extends javax.swing.JPanel {
                     if (m_board.getConvexRails()) sideCutRadius = m_board.getSidecutRadius() - 50 * (getHandleMovedDistance(e.getY(), m_mousePositionY  )) ;
                     
                     if (sideCutRadius < 1000) sideCutRadius = 1000;
-                    if (sideCutRadius > 46000) sideCutRadius = 46000;
                     
                     m_board.setSidecutRadius(sideCutRadius);
                     
