@@ -38,7 +38,7 @@ more details.
 
 To run on current versions of macOS (11+ at least) you will need to authorize each .jar file in the download. Go into the `lib`
 directory, right click on each .jar file in turn and select "Open". macOS isn't happy that the files aren't from a trusted source,
-and this will allow them to be used. Now right clock on snoCAD-X.jar and select Open and the app should launch and work without issue.
+and this will allow them to be used. Now right click on snoCAD-X.jar and select Open and the app should launch and work without issue.
 
 ## Dependencies
 
