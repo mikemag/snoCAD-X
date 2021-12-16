@@ -34,6 +34,12 @@ Simply download the zip and double-click snoCAD-x.jar to launch the
 app on any platform with Java installed. See the release notes for
 more details.
 
+### Running on macOS
+
+To run on current versions of macOS (11+ at least) you will need to authorize each .jar file in the download. Go into the `lib`
+directory, right click on each .jar file in turn and select "Open". macOS isn't happy that the files aren't from a trusted source,
+and this will allow them to be used. Now right clock on snoCAD-X.jar and select Open and the app should launch and work without issue.
+
 ## Dependencies
 
 snoCAD-X currently depends on the following packages:
